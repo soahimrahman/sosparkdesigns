@@ -7,6 +7,10 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Inter:ital,opsz,wght@0,14..32,400;0,14..32,500;0,14..32,600;0,14..32,700;1,14..32,400&display=swap');
 
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 :root {
   /* ── Whitish Theme Core Palette ── */
   --cream:        #ffffff;   /* pure white canvas */
@@ -30,11 +34,13 @@
   --blue-glass-2: rgba(37, 99, 235, 0.16);
   --blue-glow:    rgba(37, 99, 235, 0.25);
 
-  /* ── Neon Lime Accent (Aeline Signature) ── */
-  --neon-lime:       #bef264;
-  --neon-lime-light: #d9f99d;
-  --neon-lime-hover: #a3e635;
-  --neon-lime-dark:  #09090b;
+  /* ── Secondary Brand Accents (Strict No-Green Brand Rules) ── */
+  --neon-lime:       #38bdf8;
+  --neon-lime-light: #bae6fd;
+  --neon-lime-hover: #0284c7;
+  --neon-lime-dark:  #0369a1;
+  --blue-sky:        #38bdf8;
+  --blue-sky-light:  #bae6fd;
 
   /* ── Gold & Spark Accents ── */
   --gold:         #eab308;
@@ -245,7 +251,7 @@ input, textarea, select { font-family: var(--font-body); }
   background: #dbeafe; color: #1d4ed8; border: 1px solid #bfdbfe;
 }
 .headline-chip--lime {
-  background: #ecfccb; color: #3f6212; border: 1px solid #d9f99d;
+  background: #eff6ff; color: #1d4ed8; border: 1px solid #bfdbfe;
 }
 .headline-chip--dark {
   background: #09090b; color: #ffffff; border: 1px solid #27272a;
@@ -611,9 +617,9 @@ input, textarea, select { font-family: var(--font-body); }
   border-color: rgba(37, 99, 235, 0.25);
 }
 .headline-chip--lime {
-  background: rgba(190, 242, 100, 0.28);
-  color: #365314;
-  border-color: rgba(163, 230, 53, 0.5);
+  background: rgba(37, 99, 235, 0.12);
+  color: #1d4ed8;
+  border-color: rgba(37, 99, 235, 0.3);
 }
 .headline-chip--dark {
   background: #09090b;
@@ -716,15 +722,15 @@ input, textarea, select { font-family: var(--font-body); }
   justify-content: space-between;
 }
 
-/* Bento Card 3: Neon Lime Metric Card (Like Aeline Top-Right) */
+/* Bento Card 3: Cobalt Brand Gradient Card (Strict No-Green Brand Rules) */
 .bento-card--lime {
-  background: linear-gradient(145deg, #bef264 0%, #a3e635 100%);
-  color: #09090b;
-  box-shadow: 0 16px 36px rgba(190, 242, 100, 0.35);
-  border: 1px solid rgba(0, 0, 0, 0.05);
+  background: linear-gradient(145deg, #1e40af 0%, #1d4ed8 100%);
+  color: #ffffff;
+  box-shadow: 0 16px 36px rgba(29, 78, 216, 0.25);
+  border: 1px solid rgba(255, 255, 255, 0.12);
 }
-.bento-card--lime h3, .bento-card--lime .bento-metric { color: #09090b; }
-.bento-card--lime p { color: #1e293b; }
+.bento-card--lime h3, .bento-card--lime .bento-metric { color: #ffffff; }
+.bento-card--lime p { color: rgba(255, 255, 255, 0.85); }
 
 /* Bento Card 4: Obsidian Black Accent Card */
 .bento-card--dark {
@@ -1350,6 +1356,15 @@ input, textarea, select { font-family: var(--font-body); }
   letter-spacing: 0.05em; text-transform: uppercase;
   transition: transform var(--dur-fast), background var(--dur-fast), box-shadow var(--dur-fast);
 }
+@media (max-width: 768px) {
+  .ai-widget-trigger {
+    bottom: 16px;
+    right: 16px;
+    padding: 8px 14px;
+    font-size: 11px;
+    box-shadow: 0 6px 20px rgba(37, 99, 235, 0.25);
+  }
+}
 .ai-widget-trigger:hover {
   background: var(--blue-dark); transform: scale(1.04) translateY(-2px);
   box-shadow: 0 14px 40px rgba(37, 99, 235, 0.5);
@@ -1393,8 +1408,8 @@ input, textarea, select { font-family: var(--font-body); }
 }
 .tilted-pill--right {
   bottom: -14px; right: 10%; transform: rotate(6deg);
-  background: var(--neon-lime); color: #09090b;
-  border: 1px solid rgba(0, 0, 0, 0.08);
+  background: var(--blue-dark); color: #ffffff;
+  border: 1px solid rgba(255, 255, 255, 0.15);
 }
 
 /* ============================================

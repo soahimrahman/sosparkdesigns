@@ -56,7 +56,7 @@ const ARC_CARDS: ArcCard[] = [
     metric: '140+',
     metricLabel: 'Shipped Projects',
     bgType: 'dark',
-    icon: <Sparkles size={16} className="text-lime-400" />,
+    icon: <Sparkles size={16} className="text-blue-400" />,
     tags: ['Full-Stack', 'Brand'],
     link: '/about',
   },

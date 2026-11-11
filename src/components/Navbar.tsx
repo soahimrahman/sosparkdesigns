@@ -24,10 +24,22 @@ export default function Navbar() {
     setMobileOpen(false);
   }, [pathname]);
 
+  // Close mobile drawer on Escape key press for accessibility
+  useEffect(() => {
+    const handleKeyDown = (e: KeyboardEvent) => {
+      if (e.key === 'Escape' && mobileOpen) {
+        setMobileOpen(false);
+      }
+    };
+    window.addEventListener('keydown', handleKeyDown);
+    return () => window.removeEventListener('keydown', handleKeyDown);
+  }, [mobileOpen]);
+
   const navLinks = [
     { label: 'Home', href: '/' },
     { label: 'About', href: '/about' },
-    { label: 'Services', href: '/services', badge: 'NEW' },
+    { label: 'Services', href: '/services' },
+    { label: 'Ventures', href: '/#ventures', badge: 'ECOSYSTEM' },
     { label: 'Portfolio', href: '/portfolio' },
     { label: 'Team', href: '/team' },
     { label: 'Reviews', href: '/reviews' },

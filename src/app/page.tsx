@@ -5,6 +5,7 @@ import HeroSaaSOrbits from '@/components/HeroSaaSOrbits';
 import HeroArcDeck from '@/components/HeroArcDeck';
 import FrostedPocketDeck from '@/components/FrostedPocketDeck';
 import RadialOrbitCommunity from '@/components/RadialOrbitCommunity';
+import VenturesSection from '@/components/VenturesSection';
 import {
   ArrowRight,
   ArrowUpRight,
@@ -132,9 +133,9 @@ export default function HomePage() {
     },
   ];
 
-  const clientLogos = [
-    'GOOGLE', 'AIRBNB', 'COINBASE', 'NOTION', 'GUMROAD', 'PAYPAL',
-    'STRIPE', 'FIGMA', 'VERCEL', 'SUPABASE', 'LINEAR', 'NEXT.JS'
+  const techStackMarks = [
+    'NEXT.JS', 'TYPESCRIPT', 'TAILWIND CSS', 'REACT 18', 'FIGMA', 'CLOUDFLARE',
+    'VITEST', 'ZOD', 'THREE.JS', 'LUCIDE'
   ];
 
   return (
@@ -210,18 +211,18 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* ── 2. Client Logos Strip (Aeline Grayscale Monochrome Band) ── */}
+      {/* ── 2. Modern Tech & Design Stack Strip ── */}
       <section className="logos-strip" aria-labelledby="logos-title">
         <div className="container">
           <p className="logos-strip__label" data-scrollfx="fade" id="logos-title">
-            Trusted by founders and high-growth brands worldwide
+            Engineered with modern technologies &amp; robust design systems
           </p>
         </div>
         <div className="marquee-rows logos-strip__rows">
           <div className="marquee-row marquee-row--left logos-row">
             <div className="marquee-track">
-              {clientLogos.concat(clientLogos).map((l, i) => (
-                <span key={`logo1-${i}`} className="logo-mark" aria-hidden={i >= clientLogos.length}>
+              {techStackMarks.concat(techStackMarks).map((l, i) => (
+                <span key={`stack-${i}`} className="logo-mark" aria-hidden={i >= techStackMarks.length}>
                   {l}
                 </span>
               ))}
@@ -244,8 +245,8 @@ export default function HomePage() {
                 <Sparkles size={12} className="text-blue-600" /> smarter
               </span>{' '}
               and{' '}
-              <span className="headline-chip headline-chip--lime">
-                <Zap size={12} className="text-lime-700" /> high-converting
+              <span className="headline-chip headline-chip--blue">
+                <Zap size={12} className="text-blue-700" /> enduring
               </span>{' '}
               brands
             </h2>
@@ -415,7 +416,10 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* ── 5. Works Teaser (Bento Layout + Frosted Pocket Deck Showcase) ── */}
+      {/* ── 5. Proprietary Ventures & Digital Ecosystem (Subz Empire & SparkForge) ── */}
+      <VenturesSection />
+
+      {/* ── 6. Works Teaser (Bento Layout + Frosted Pocket Deck Showcase) ── */}
       <section className="works-teaser" id="rail-work" aria-labelledby="works-title">
         <div className="container">
           <div className="works-teaser__header">
@@ -524,7 +528,7 @@ export default function HomePage() {
                         <Star key={i} size={15} fill="#f59e0b" strokeWidth={0} />
                       ))}
                     </div>
-                    <p className="review-card__text">"{rev.text}"</p>
+                    <p className="review-card__text">&ldquo;{rev.text}&rdquo;</p>
                   </div>
                   <div className="review-card__author">
                     <div className="review-card__avatar">{rev.avatar}</div>
@@ -549,7 +553,7 @@ export default function HomePage() {
                         <Star key={i} size={15} fill="#f59e0b" strokeWidth={0} />
                       ))}
                     </div>
-                    <p className="review-card__text">"{rev.text}"</p>
+                    <p className="review-card__text">&ldquo;{rev.text}&rdquo;</p>
                   </div>
                   <div className="review-card__author">
                     <div className="review-card__avatar">{rev.avatar}</div>
