@@ -40,15 +40,20 @@
 | Spatial Fanned Deck Component | **Implemented and verified** | Implemented `SpatialFannedDeck.tsx` (Reference B / Pallet Ross) showcasing SparkForge, Subz Empire, and Design Tokens. |
 | Numbered Horizontal Service Rows | **Implemented and verified** | Implemented in `ServicesSection.tsx` (Reference C / Cydrix) with 3-zone columns, hover wash, and arrow translation. |
 | Centralized Motion System & Framer Motion Primitives | **Implemented and verified** | Established `src/lib/motion-tokens.ts` and primitives (`Reveal.tsx`, `StaggerGroup.tsx`, `AnimatedHeadline.tsx`) with full `prefers-reduced-motion` compliance. |
+| Premium Services Page (Milestone 4.2) | **Implemented and verified** | Built complete 7-section `/services` architecture: Animated Hero, Cydrix Numbered Overview Rows, 6 Alternating Detail Breakdowns, 5-Stage Process Methodology, Engagement Models, Accessible FAQ Accordion, and Light Conversion CTA. |
 
 ## 4. Current Milestone Status
 - **Milestone 1 (Foundations & Tooling)**: **Implemented and verified**
 - **Milestone 2 (Brand Identity & Ventures Rebuild)**: **Implemented and verified**
 - **Milestone 3 (Inquiry Funnel & Validation)**: **Implemented and verified**
 - **Milestone 3.5 (Visual Reference Integration & Motion Engineering)**: **Implemented and verified**
-- **Milestone 4 (Secondary Pages Polish)**: **In progress**
+- **Milestone 4.1 (Baseline Audit & Content Inventory)**: **Implemented and verified**
+- **Milestone 4.2 (Premium Services Page)**: **Implemented and verified**
+- **Milestone 4.3 (Portfolio & Case Studies)**: **Next Up**
+- **Milestone 4.4 (About & Leadership Page)**: **In progress**
+- **Milestone 4.5 (FAQ & Knowledge Base)**: **In progress**
 - **Milestone 5 (Cloudflare Staging & Deployment)**: **In progress**
 
 ## 5. Next Immediate Actions
-- Polish secondary sub-pages (`/services`, `/portfolio`, `/about`, `/faq`) to align all copy with authentic studio cases.
-- Finalize production deployment configuration for Cloudflare Pages and Render fallback.
+- Proceed to Milestone 4.3: Portfolio & Case Studies Rebuild (`src/app/portfolio/page.tsx`).
+- Update `/about` and `/faq` with factual company background and leadership info.

@@ -37,7 +37,7 @@
 - [x] Test and verify mobile responsiveness at 375px and desktop viewports via browser automation and vision analysis.
 
 ## Milestone 4: Secondary Pages & Narrative Expansion
-- [ ] Refine `/services` with honest scope definitions and timeline expectations.
+- [x] Refactor `/services` with premium Luminous light theme, Cydrix-inspired numbered horizontal overview, deep-dive alternating service breakdowns, 5-stage methodology timeline, transparent engagement models, accessible FAQ accordion, and schema markup (Milestone 4.2).
 - [ ] Update `/portfolio` with genuine creative and technical case studies.
 - [ ] Update `/about` and `/faq` with factual company background.
 
