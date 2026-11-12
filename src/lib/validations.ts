@@ -43,6 +43,10 @@ export const contactFormSchema = z.object({
     .string()
     .optional()
     .default('Flexible / Not Sure'),
+  hp_website: z
+    .string()
+    .optional()
+    .default(''),
   message: z
     .string()
     .trim()

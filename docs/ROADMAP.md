@@ -13,14 +13,15 @@
 - [x] Build and test initial homepage structure integrating authentic positioning and dedicated ventures section.
 
 ## Milestone 2: Authentic Content & Venture Showcase
-- [ ] Connect Subz Empire (`subzempire.com`) and SparkForge (`sparkfroge.pro.bd`) flagship features on homepage.
-- [ ] Replace all mock client logos (Google, Airbnb, Coinbase) and fake reviews with authentic agency capability statements.
-- [ ] Ensure full keyboard accessibility on interactive components (Tab, Enter/Space, Escape closes mobile menu).
+- [x] Connect Subz Empire (`subzempire.com`) and SparkForge (`sparkfroge.pro.bd`) flagship features on homepage.
+- [x] Replace all mock client logos (Google, Airbnb, Coinbase) and fake reviews with authentic agency capability statements.
+- [x] Ensure full keyboard accessibility on interactive components (Tab, Enter/Space, Escape closes mobile menu).
 
 ## Milestone 3: Verified Client Inquiry & Lead Generation
-- [ ] Implement Zod schema validation for project inquiries (`src/lib/validations.ts`).
-- [ ] Connect `/contact` form to `/api/contact` with error and success states.
-- [ ] Write Vitest unit tests verifying schema validation rejection of invalid emails and empty fields.
+- [x] Implement Zod schema validation for project inquiries (`src/lib/validations.ts`).
+- [x] Connect `/contact` form to `/api/contact` with error and success states, field-specific validation errors, and inquiry reference IDs.
+- [x] Implement honeypot bot mitigation in form and API handler.
+- [x] Write Vitest unit tests verifying schema validation rejection of invalid emails, short messages, and honeypot handling (6 tests passing).
 
 ## Milestone 4: Secondary Pages & Narrative Expansion
 - [ ] Refine `/services` with honest scope definitions and timeline expectations.

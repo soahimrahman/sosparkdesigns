@@ -20,17 +20,26 @@
 ## 3. Discovered Technical Issues & Resolutions
 | Issue | Status | Resolution |
 |---|---|---|
-| Uninitialized Git repository | **Resolved** | Initialized git and created baseline commit. |
-| Missing ESLint config causing `next lint` to hang | **Resolved** | Added `.eslintrc.json` extending `next/core-web-vitals`. |
-| Incompatible ESLint 10 with Next 14 | **Resolved** | Pinned to `eslint@8.57.1` and `eslint-config-next@14.2.15`. |
-| Missing Tailwind CSS integration | **Resolved** | Installed and configured Tailwind v3 with PostCSS and custom brand tokens. |
-| Missing Unit Testing framework | **Resolved** | Installed Vitest and configured React plugin with path aliases. |
-| Neon-lime accent violating brand guidelines | **In Progress** | Purging from global CSS and replacing with Royal Blue palette. |
-| Fabricated corporate logos and reviews | **In Progress** | Replacing with authentic agency capabilities and owned ventures showcase. |
+| Uninitialized Git repository | **Implemented and verified** | Initialized git and created baseline commit (`4beacfb`). |
+| Missing ESLint config causing `next lint` to hang | **Implemented and verified** | Added `.eslintrc.json` extending `next/core-web-vitals`. |
+| Incompatible ESLint 10 with Next 14 | **Implemented and verified** | Pinned to `eslint@8.57.1` and `eslint-config-next@14.2.15`. |
+| Missing Tailwind CSS integration | **Implemented and verified** | Installed and configured Tailwind v3 with PostCSS and custom brand tokens. |
+| Missing Unit Testing framework | **Implemented and verified** | Installed Vitest and configured React plugin with path aliases (6 tests passing). |
+| Neon-lime accent violating brand guidelines | **Implemented and verified** | Purged from global CSS and replaced with Royal Blue/Cobalt palette. |
+| Fabricated corporate logos and reviews | **Implemented and verified** | Replaced with authentic technology stack strip and verified agency capability cases. |
+| Heavy 600KB Three.js bundle on Homepage | **Implemented and verified** | Replaced with lightweight CSS/SVG `HeroSystemVisual`, reducing First Load JS from 256 kB to 99.4 kB (61% reduction). |
+| Floating AI button collision on mobile | **Implemented and verified** | Refactored FAB to compact circular button on screens <= 768px, eliminating overlap. |
+| Mobile H1 text wrapping at 375px | **Implemented and verified** | Adjusted responsive font sizing so headline wraps cleanly in two balanced lines. |
+| Contact form Zod validation & spam trap | **Implemented and verified** | Integrated `validateContactForm` on both `/contact` and `/api/contact` with honeypot bot trap. |
+| Mongoose runtime on Cloudflare Workers | **Documented / In Progress** | Documented TCP socket incompatibility on pure edge workers; recommended containerized API or Atlas HTTPS API. |
 
-## 4. Next Actions
-- Purge neon-lime variables and classes from `src/styles/globals.css`.
-- Implement reusable UI components (`src/components/ui/Button.tsx`, `src/components/ui/Badge.tsx`, `src/components/ui/Card.tsx`).
-- Implement `src/app/loading.tsx` and `src/app/error.tsx`.
-- Create `src/lib/validations.ts` for form input validation and write unit tests.
-- Rebuild homepage sections with authentic narrative and dedicated Subz Empire / SparkForge showcase.
+## 4. Current Milestone Status
+- **Milestone 1 (Foundations & Tooling)**: **Implemented and verified**
+- **Milestone 2 (Brand Identity & Ventures Rebuild)**: **Implemented and verified**
+- **Milestone 3 (Inquiry Funnel & Validation)**: **Implemented and verified**
+- **Milestone 4 (Secondary Pages Polish)**: **In progress**
+- **Milestone 5 (Cloudflare Staging & Deployment)**: **In progress**
+
+## 5. Next Immediate Actions
+- Polish secondary sub-pages (`/services`, `/portfolio`, `/about`, `/faq`) to align all copy with authentic studio cases.
+- Finalize production deployment configuration for Cloudflare Pages and Render fallback.

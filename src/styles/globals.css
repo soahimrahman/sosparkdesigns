@@ -1358,11 +1358,17 @@ input, textarea, select { font-family: var(--font-body); }
 }
 @media (max-width: 768px) {
   .ai-widget-trigger {
-    bottom: 16px;
+    bottom: 20px;
     right: 16px;
-    padding: 8px 14px;
-    font-size: 11px;
-    box-shadow: 0 6px 20px rgba(37, 99, 235, 0.25);
+    width: 44px;
+    height: 44px;
+    padding: 0;
+    justify-content: center;
+    border-radius: 50%;
+    box-shadow: 0 6px 20px rgba(37, 99, 235, 0.3);
+  }
+  .ai-widget-trigger span {
+    display: none;
   }
 }
 .ai-widget-trigger:hover {

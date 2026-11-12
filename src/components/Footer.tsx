@@ -8,7 +8,7 @@ interface FooterProps {
   hideCtaBand?: boolean;
 }
 
-export default function Footer({ hideCtaBand = false }: FooterProps) {
+export default function Footer({ hideCtaBand = true }: FooterProps) {
   return (
     <>
       {!hideCtaBand && (
@@ -30,7 +30,7 @@ export default function Footer({ hideCtaBand = false }: FooterProps) {
                 {/* Live Availability Badge */}
                 <div className="cta-live-badge" data-scrollfx="fade">
                   <span className="live-pulse-dot" />
-                  <span>2 Project Slots Open for Q4/Q1 • 24h Response</span>
+                  <span>Accepting Select New Projects • 24–48h Response</span>
                 </div>
 
                 <h2 id="cta-band-heading" className="cta-band__title" data-scrollfx="blur-up">
@@ -38,48 +38,19 @@ export default function Footer({ hideCtaBand = false }: FooterProps) {
                 </h2>
 
                 <p className="cta-band__sub" data-scrollfx="fade">
-                  Let&apos;s talk about your vision, define your aesthetic, and launch an unforgettable digital presence engineered for hyper-growth.
+                  Let&apos;s talk about your vision, define your aesthetic, and launch an unforgettable digital presence engineered for performance.
                 </p>
 
                 {/* Kinetic Action Buttons */}
                 <div className="cta-band__actions" data-scrollfx="fade">
                   <Link href="/contact" className="cta-master-btn">
-                    <span>Start a Conversation</span>
+                    <span>Start a Project</span>
                     <ArrowRight size={16} />
                   </Link>
                   <Link href="/portfolio" className="cta-ghost-btn">
-                    <span>View Selected Work</span>
+                    <span>View Built Platforms</span>
                     <ArrowUpRight size={15} />
                   </Link>
-                </div>
-
-                {/* Trust Metrics Bar */}
-                <div className="cta-band__trust" data-scrollfx="fade">
-                  <span className="cta-trust-pill">
-                    <CheckCircle2 size={14} className="text-blue-600" /> 140+ projects delivered
-                  </span>
-                  <span className="cta-trust-pill">
-                    <CheckCircle2 size={14} className="text-blue-600" /> 48+ happy founders
-                  </span>
-                  <span className="cta-trust-pill">
-                    <CheckCircle2 size={14} className="text-blue-600" /> Sub-second Next.js speed
-                  </span>
-                </div>
-              </div>
-
-              {/* 3D Kinetic Orbiting Sphere with Particle Satellites */}
-              <div className="cta-band__visual" aria-hidden="true">
-                <div className="cta-band__orbit">
-                  <div className="cta-band__orbit-core">
-                    <Sparkles size={24} className="text-blue-600" />
-                  </div>
-                  <div className="cta-band__orbit-ring cta-band__orbit-ring--1" />
-                  <div className="cta-band__orbit-ring cta-band__orbit-ring--2" />
-                  <div className="cta-band__orbit-ring cta-band__orbit-ring--3" />
-                  <span className="cta-band__orbit-dot cta-band__orbit-dot--1" />
-                  <span className="cta-band__orbit-dot cta-band__orbit-dot--2" />
-                  <span className="cta-band__orbit-dot cta-band__orbit-dot--3" />
-                  <div className="cta-orbit-halo" />
                 </div>
               </div>
             </div>
@@ -98,7 +69,7 @@ export default function Footer({ hideCtaBand = false }: FooterProps) {
                 className="footer__logo-img"
               />
               <p className="footer__desc">
-                SoSpark Design is a bespoke creative agency engineering bold brand identities, high-impact web design, full-stack digital products, and motion graphics.
+                SoSpark Design is a creative digital agency and parent company engineering bold brand identities, high-impact web design, full-stack Next.js products, and digital ventures.
               </p>
             </div>
 
@@ -109,8 +80,8 @@ export default function Footer({ hideCtaBand = false }: FooterProps) {
                 <li><Link href="/about">About Us</Link></li>
                 <li><Link href="/services">Services</Link></li>
                 <li><Link href="/portfolio">Portfolio</Link></li>
-                <li><Link href="/team">Team</Link></li>
-                <li><Link href="/reviews">Reviews</Link></li>
+                <li><Link href="/#ventures">Ventures</Link></li>
+                <li><Link href="/contact">Contact</Link></li>
                 <li><Link href="/faq">FAQ</Link></li>
               </ul>
             </div>
@@ -118,24 +89,45 @@ export default function Footer({ hideCtaBand = false }: FooterProps) {
             <div>
               <h4 className="footer__col-title">Services</h4>
               <ul className="footer__nav">
-                <li><Link href="/services#branding">Brand Identity</Link></li>
+                <li><Link href="/services#brand-identity">Brand Identity</Link></li>
                 <li><Link href="/services#web-design">Web & UI/UX Design</Link></li>
                 <li><Link href="/services#web-dev">Web Development</Link></li>
                 <li><Link href="/services#graphic-design">Graphic Design</Link></li>
-                <li><Link href="/services#video">Video Production</Link></li>
-                <li><Link href="/services#page-mgmt">Page Management</Link></li>
+                <li><Link href="/services#video-editing">Video Production</Link></li>
+                <li><Link href="/services#page-management">Page Management</Link></li>
               </ul>
             </div>
 
             <div>
-              <h4 className="footer__col-title">Direct Contact</h4>
-              <p style={{ fontSize: '0.92rem', color: 'var(--ink-light)', marginBottom: 'var(--sp-2)' }}>
+              <h4 className="footer__col-title">Ventures & Contact</h4>
+              <div style={{ marginBottom: 'var(--sp-3)' }}>
+                <span style={{ fontSize: '0.75rem', textTransform: 'uppercase', color: 'var(--ink-light)', letterSpacing: '0.08em', fontWeight: 700, display: 'block', marginBottom: '4px' }}>
+                  Owned Platforms
+                </span>
+                <ul className="footer__nav">
+                  <li>
+                    <a href="https://sparkfroge.pro.bd" target="_blank" rel="noopener noreferrer" style={{ display: 'inline-flex', alignItems: 'center', gap: '4px' }}>
+                      SparkForge <ArrowUpRight size={12} />
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://subzempire.com" target="_blank" rel="noopener noreferrer" style={{ display: 'inline-flex', alignItems: 'center', gap: '4px' }}>
+                      Subz Empire <ArrowUpRight size={12} />
+                    </a>
+                  </li>
+                </ul>
+              </div>
+
+              <span style={{ fontSize: '0.75rem', textTransform: 'uppercase', color: 'var(--ink-light)', letterSpacing: '0.08em', fontWeight: 700, display: 'block', marginBottom: '4px' }}>
+                Direct Inquiry
+              </span>
+              <p style={{ fontSize: '0.92rem', color: 'var(--ink-2)', marginBottom: 'var(--sp-2)' }}>
                 hello@sosparkdesign.com
               </p>
-              <p style={{ fontSize: '0.85rem', color: 'var(--ink-light)', marginBottom: 'var(--sp-4)' }}>
+              <p style={{ fontSize: '0.82rem', color: 'var(--ink-light)', marginBottom: 'var(--sp-4)' }}>
                 Dhaka, Bangladesh — Serving Clients Globally
               </p>
-              <div style={{ marginTop: 'var(--sp-4)' }}>
+              <div>
                 <Link
                   href="/admin"
                   style={{

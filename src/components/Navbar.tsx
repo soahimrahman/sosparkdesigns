@@ -39,11 +39,9 @@ export default function Navbar() {
     { label: 'Home', href: '/' },
     { label: 'About', href: '/about' },
     { label: 'Services', href: '/services' },
-    { label: 'Ventures', href: '/#ventures', badge: 'ECOSYSTEM' },
     { label: 'Portfolio', href: '/portfolio' },
-    { label: 'Team', href: '/team' },
-    { label: 'Reviews', href: '/reviews' },
-    { label: 'FAQ', href: '/faq' },
+    { label: 'Ventures', href: '/#ventures', badge: 'ECOSYSTEM' },
+    { label: 'Contact', href: '/contact' },
   ];
 
   return (
@@ -98,7 +96,7 @@ export default function Navbar() {
 
           <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
             <Link href="/contact" className="nav__cta">
-              Let&apos;s Talk <ArrowUpRight size={14} />
+              Start a Project <ArrowUpRight size={14} />
             </Link>
 
             <button
@@ -131,7 +129,7 @@ export default function Navbar() {
         ))}
         <div style={{ marginTop: '1.5rem' }}>
           <Link href="/contact" className="btn-primary" style={{ width: '100%' }}>
-            Let&apos;s Talk →
+            Start a Project →
           </Link>
         </div>
       </div>

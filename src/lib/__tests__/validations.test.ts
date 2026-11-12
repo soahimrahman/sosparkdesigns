@@ -83,4 +83,20 @@ describe('Contact Form Validation Schema', () => {
       expect(result.data.budget).toBe('Flexible / Not Sure');
     }
   });
+
+  it('handles honeypot field safely', () => {
+    const payload = {
+      name: 'Bot Attempt',
+      email: 'bot@spammer.org',
+      service: 'Brand Identity',
+      message: 'Spam payload containing external advertising links.',
+      hp_website: 'http://spam.org',
+    };
+
+    const result = validateContactForm(payload);
+    expect(result.success).toBe(true);
+    if (result.success) {
+      expect(result.data.hp_website).toBe('http://spam.org');
+    }
+  });
 });

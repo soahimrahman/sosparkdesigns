@@ -25,13 +25,16 @@
 - **Terms Review**: Vercel's Hobby plan terms state it is designated for personal, non-commercial use. Running a commercial agency offering paid branding, web development, and client retainers on Vercel Hobby poses compliance risks and possible service suspension.
 - **Recommendation**: Do not bind production commercial operations exclusively to Vercel Hobby.
 
-### B. Cloudflare Pages & OpenNext
-- **Compatibility**: The user domain is managed via Cloudflare. Cloudflare Pages (via `@cloudflare/next-on-pages` or OpenNext) provides globally distributed edge caching, free SSL, DDoS mitigation, and robust bandwidth allowances.
-- **Recommendation**: Prime candidate for production static and edge deployment.
+### B. Cloudflare Pages & Runtime Compatibility
+- **Static Pages & Edge Caching**: The user domain is already on Cloudflare. Cloudflare Pages provides edge caching, free SSL, DDoS mitigation, and generous bandwidth.
+- **Node.js / Mongoose Compatibility Warning**: Mongoose (`mongoose@8.x`) relies on Node.js TCP socket primitives (`net`, `tls`), which cannot run in standard V8 Cloudflare Workers without Cloudflare Hyperdrive or Node.js compatibility flags (`nodejs_compat`).
+- **Recommended Production Architecture**:
+  - Deploy frontend assets as a static/edge build on **Cloudflare Pages**.
+  - Route dynamic `/api/contact` submissions to a native Node.js container (e.g. Render Web Service or serverless Node) or forward inquiries via HTTP webhooks / Resend SMTP, decoupling edge delivery from heavy persistent MongoDB connections.
 
 ### C. Render Free Tier / Static Services
-- **Compatibility**: Render supports static sites and web services with automated GitHub deployment hooks.
-- **Recommendation**: Suitable as a fallback container or secondary host.
+- **Compatibility**: Render supports native Node.js runtimes (full compatibility with Mongoose, bcryptjs, and Next.js server components) as well as free static site hosting.
+- **Recommendation**: Deploy backend/API service or full-stack Node container on Render as the primary serverless backend, using Cloudflare DNS and CDN caching in front.
 
 ---
 
