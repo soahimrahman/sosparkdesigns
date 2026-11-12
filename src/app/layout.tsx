@@ -7,7 +7,7 @@ import InteractiveEffects from '@/components/InteractiveEffects';
 import SectionRail from '@/components/SectionRail';
 import AiChatWidget from '@/components/AiChatWidget';
 
-const siteUrl = (process.env.NEXT_PUBLIC_SITE_URL || 'https://sosparkdesign.com').replace(/\/+$/, '');
+const siteUrl = (process.env.NEXT_PUBLIC_SITE_URL || 'https://sosparkdesigns.com').replace(/\/+$/, '');
 const isStaging =
   process.env.NEXT_PUBLIC_APP_ENV === 'staging' || process.env.VERCEL_ENV === 'preview';
 

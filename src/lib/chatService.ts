@@ -1,4 +1,4 @@
-const SYSTEM_PROMPT = `You are the official AI representative of SoSpark Design (sosparkdesign.com), a world-class creative agency based in Bangladesh, founded by Soahim Rahman Tasin.
+const SYSTEM_PROMPT = `You are the official AI representative of SoSpark Design (sosparkdesigns.com), a world-class creative agency based in Bangladesh, founded by Soahim Rahman Tasin.
 We specialize in:
 1. Graphic Design & Brand Collateral
 2. Comprehensive Brand Identity (logos, typography, guidelines)
@@ -104,7 +104,7 @@ export async function generateChatReply(history: { role: string; content: string
 
   const activeKeys = pool.filter(k => k.active);
   if (activeKeys.length === 0) {
-    return "Thank you for visiting SoSpark Design! Our AI assistant is currently recharging. Please reach out to us directly via our Contact page or email hello@sosparkdesign.com and we'll reply within 24 hours.";
+    return "Thank you for visiting SoSpark Design! Our AI assistant is currently recharging. Please reach out to us directly via our Contact page or email soahimrahman2024@gmail.com and we'll reply within 24 hours.";
   }
 
   // Attempt up to 3 keys in rotation

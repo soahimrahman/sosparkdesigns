@@ -74,7 +74,7 @@ export default function AiChatWidget() {
         {
           role: 'assistant',
           content:
-            "I'm temporarily having trouble connecting to the network, but our team is ready to talk! Reach out directly at hello@sosparkdesign.com or via our Contact page.",
+            "I'm temporarily having trouble connecting to the network, but our team is ready to talk! Reach out directly at soahimrahman2024@gmail.com or via our Contact page.",
         },
       ]);
     } finally {

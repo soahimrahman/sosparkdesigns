@@ -122,7 +122,7 @@ export default function Footer({ hideCtaBand = true }: FooterProps) {
                 Direct Inquiry
               </span>
               <p style={{ fontSize: '0.92rem', color: 'var(--ink-2)', marginBottom: 'var(--sp-2)' }}>
-                hello@sosparkdesign.com
+                soahimrahman2024@gmail.com
               </p>
               <p style={{ fontSize: '0.82rem', color: 'var(--ink-light)', marginBottom: 'var(--sp-4)' }}>
                 Dhaka, Bangladesh — Serving Clients Globally

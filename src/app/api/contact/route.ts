@@ -88,7 +88,7 @@ export async function POST(req: NextRequest) {
       return NextResponse.json(
         {
           success: false,
-          error: 'Unable to save your inquiry at this moment due to a service error. Please email us directly at hello@sosparkdesign.com.',
+          error: 'Unable to save your inquiry at this moment due to a service error. Please email us directly at soahimrahman2024@gmail.com.',
         },
         { status: 503 }
       );
