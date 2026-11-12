@@ -1,9 +1,9 @@
 import { MetadataRoute } from 'next';
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = (process.env.NEXT_PUBLIC_SITE_URL || 'https://sosparkdesign.com').replace(/\/+$/, '');
+  const baseUrl = (process.env.NEXT_PUBLIC_SITE_URL || 'https://sosparkdesigns.com').replace(/\/+$/, '');
 
-  // 8 Canonical Public Routes
+  // 10 Canonical Public Routes
   const publicRoutes = [
     '',
     '/services',
@@ -13,9 +13,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/about',
     '/faq',
     '/contact',
+    '/privacy',
+    '/terms',
   ];
 
-  // Specific, honest priorities matching information architecture
   const priorityMap: Record<string, number> = {
     '': 1.0,
     '/services': 0.9,
@@ -25,6 +26,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/about': 0.8,
     '/contact': 0.8,
     '/faq': 0.7,
+    '/privacy': 0.5,
+    '/terms': 0.5,
   };
 
   return publicRoutes.map((route) => ({

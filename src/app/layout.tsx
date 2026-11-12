@@ -27,6 +27,21 @@ export const metadata: Metadata = {
     siteName: 'SoSpark Design',
     locale: 'en_US',
     type: 'website',
+    images: [
+      {
+        url: '/assets/og-image.png',
+        width: 1200,
+        height: 630,
+        alt: 'SoSpark Design — Creative Agency & Digital Lab',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'SoSpark Design — Creative Agency & Digital Lab',
+    description:
+      'We build what we believe should exist. Brand architecture, Next.js engineering, and digital venture platforms.',
+    images: ['/assets/og-image.png'],
   },
   icons: {
     icon: '/assets/logo-dark.svg',
