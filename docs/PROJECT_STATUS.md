@@ -39,6 +39,7 @@
 | Kinetic Headline Keyword Ticker | **Implemented and verified** | Implemented `KineticHeadlineTicker.tsx` with smooth text unmasking and spring transitions. |
 | Spatial Fanned Deck Component | **Implemented and verified** | Implemented `SpatialFannedDeck.tsx` (Reference B / Pallet Ross) showcasing SparkForge, Subz Empire, and Design Tokens. |
 | Numbered Horizontal Service Rows | **Implemented and verified** | Implemented in `ServicesSection.tsx` (Reference C / Cydrix) with 3-zone columns, hover wash, and arrow translation. |
+| Centralized Motion System & Framer Motion Primitives | **Implemented and verified** | Established `src/lib/motion-tokens.ts` and primitives (`Reveal.tsx`, `StaggerGroup.tsx`, `AnimatedHeadline.tsx`) with full `prefers-reduced-motion` compliance. |
 
 ## 4. Current Milestone Status
 - **Milestone 1 (Foundations & Tooling)**: **Implemented and verified**

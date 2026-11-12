@@ -32,6 +32,8 @@
 - [x] Implement Spatial Fanned Deck (`SpatialFannedDeck.tsx`) inspired by Pallet Ross reference.
 - [x] Implement Numbered Horizontal Service Rows (`ServicesSection.tsx`) inspired by Cydrix reference.
 - [x] Refactor conversion CTA (`ConversionCtaSection.tsx`) to 100% light theme.
+- [x] Implement centralized motion tokens (`src/lib/motion-tokens.ts`) and Framer Motion primitives (`Reveal.tsx`, `StaggerGroup.tsx`, `AnimatedHeadline.tsx`).
+- [x] Connect `AnimatePresence` and spring transition physics to `KineticHeadlineTicker.tsx`.
 - [x] Test and verify mobile responsiveness at 375px and desktop viewports via browser automation and vision analysis.
 
 ## Milestone 4: Secondary Pages & Narrative Expansion

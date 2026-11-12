@@ -10,6 +10,7 @@ import AuthenticWorkShowcase from '@/components/AuthenticWorkShowcase';
 import VenturesSection from '@/components/VenturesSection';
 import ProcessSection from '@/components/ProcessSection';
 import ConversionCtaSection from '@/components/ConversionCtaSection';
+import Reveal from '@/components/motion/Reveal';
 import Button from '@/components/ui/Button';
 import Badge from '@/components/ui/Badge';
 
@@ -109,37 +110,51 @@ export default function HomePage() {
       </section>
 
       {/* ── Section C: Agency Introduction (Editorial Layout) ── */}
-      <AgencyEditorialIntro />
+      <Reveal direction="up" threshold={0.1}>
+        <AgencyEditorialIntro />
+      </Reveal>
 
       {/* Interactive System Capability Terminal */}
-      <section className="py-16 md:py-20 bg-slate-50/50 border-b border-slate-200/80">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center max-w-2xl mx-auto mb-10">
-            <span className="text-xs font-mono font-semibold text-blue-600 uppercase tracking-widest block mb-2">
-              Architecture Matrix
-            </span>
-            <h2 className="text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
-              Interactive System Telemetry
-            </h2>
+      <Reveal direction="up" threshold={0.1}>
+        <section className="py-16 md:py-20 bg-slate-50/50 border-b border-slate-200/80">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="text-center max-w-2xl mx-auto mb-10">
+              <span className="text-xs font-mono font-semibold text-blue-600 uppercase tracking-widest block mb-2">
+                Architecture Matrix
+              </span>
+              <h2 className="text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+                Interactive System Telemetry
+              </h2>
+            </div>
+            <HeroSystemVisual />
           </div>
-          <HeroSystemVisual />
-        </div>
-      </section>
+        </section>
+      </Reveal>
 
       {/* ── Section D: Services (The 6 Core Disciplines) ── */}
-      <ServicesSection />
+      <Reveal direction="up" threshold={0.1}>
+        <ServicesSection />
+      </Reveal>
 
       {/* ── Section E: Authentic Work Showcase ── */}
-      <AuthenticWorkShowcase />
+      <Reveal direction="up" threshold={0.1}>
+        <AuthenticWorkShowcase />
+      </Reveal>
 
       {/* ── Section F: Our Ventures (Subz Empire & SparkForge) ── */}
-      <VenturesSection />
+      <Reveal direction="up" threshold={0.1}>
+        <VenturesSection />
+      </Reveal>
 
       {/* ── Section G: 5-Step Process Timeline ── */}
-      <ProcessSection />
+      <Reveal direction="up" threshold={0.1}>
+        <ProcessSection />
+      </Reveal>
 
       {/* ── Section H: Conversion Section ── */}
-      <ConversionCtaSection />
+      <Reveal direction="up" threshold={0.1}>
+        <ConversionCtaSection />
+      </Reveal>
     </>
   );
 }
