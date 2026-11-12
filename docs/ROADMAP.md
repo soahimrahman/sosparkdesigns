@@ -23,6 +23,17 @@
 - [x] Implement honeypot bot mitigation in form and API handler.
 - [x] Write Vitest unit tests verifying schema validation rejection of invalid emails, short messages, and honeypot handling (6 tests passing).
 
+## Milestone 3.5: Visual Reference Integration & Motion Engineering (Master Prompt #3)
+- [x] Unpack and inspect all reference materials (`SoSparkDesigns_Visual_Motion_Reference_Pack.zip`): 3 screenshots, 14 videos, 2 contact sheets, official logo.
+- [x] Author comprehensive reference analysis (`docs/REFERENCE_ANALYSIS.md`).
+- [x] Author practical homepage motion storyboard (`docs/HOMEPAGE_MOTION_STORYBOARD.md`).
+- [x] Establish strict **Light Theme Only** design system with official sampled brand blue (`#0069EA`).
+- [x] Implement Signature Hero with kinetic keyword ticker (`We imagine. We design. We build [ Brand Systems ]`).
+- [x] Implement Spatial Fanned Deck (`SpatialFannedDeck.tsx`) inspired by Pallet Ross reference.
+- [x] Implement Numbered Horizontal Service Rows (`ServicesSection.tsx`) inspired by Cydrix reference.
+- [x] Refactor conversion CTA (`ConversionCtaSection.tsx`) to 100% light theme.
+- [x] Test and verify mobile responsiveness at 375px and desktop viewports via browser automation and vision analysis.
+
 ## Milestone 4: Secondary Pages & Narrative Expansion
 - [ ] Refine `/services` with honest scope definitions and timeline expectations.
 - [ ] Update `/portfolio` with genuine creative and technical case studies.

@@ -32,11 +32,19 @@
 | Mobile H1 text wrapping at 375px | **Implemented and verified** | Adjusted responsive font sizing so headline wraps cleanly in two balanced lines. |
 | Contact form Zod validation & spam trap | **Implemented and verified** | Integrated `validateContactForm` on both `/contact` and `/api/contact` with honeypot bot trap. |
 | Mongoose runtime on Cloudflare Workers | **Documented / In Progress** | Documented TCP socket incompatibility on pure edge workers; recommended containerized API or Atlas HTTPS API. |
+| Master Reference Pack Extraction & Audit | **Implemented and verified** | Extracted and analyzed 3 screenshots, 14 videos, logo reference, and 2 contact sheets in `docs/REFERENCE_ANALYSIS.md`. |
+| Master Homepage Motion Storyboard | **Implemented and verified** | Created comprehensive section-by-section motion blueprint in `docs/HOMEPAGE_MOTION_STORYBOARD.md`. |
+| Official Brand Blue `#0069EA` Sampling | **Implemented and verified** | Sampled from `official_blue_white_logo_reference.png` and applied across Tailwind tokens, CSS vars, and UI primitives. |
+| Strict Light-Theme-Only Enforcement | **Implemented and verified** | Purged all dark-theme sections; refactored Conversion CTA to radiant light blue/white palette. |
+| Kinetic Headline Keyword Ticker | **Implemented and verified** | Implemented `KineticHeadlineTicker.tsx` with smooth text unmasking and spring transitions. |
+| Spatial Fanned Deck Component | **Implemented and verified** | Implemented `SpatialFannedDeck.tsx` (Reference B / Pallet Ross) showcasing SparkForge, Subz Empire, and Design Tokens. |
+| Numbered Horizontal Service Rows | **Implemented and verified** | Implemented in `ServicesSection.tsx` (Reference C / Cydrix) with 3-zone columns, hover wash, and arrow translation. |
 
 ## 4. Current Milestone Status
 - **Milestone 1 (Foundations & Tooling)**: **Implemented and verified**
 - **Milestone 2 (Brand Identity & Ventures Rebuild)**: **Implemented and verified**
 - **Milestone 3 (Inquiry Funnel & Validation)**: **Implemented and verified**
+- **Milestone 3.5 (Visual Reference Integration & Motion Engineering)**: **Implemented and verified**
 - **Milestone 4 (Secondary Pages Polish)**: **In progress**
 - **Milestone 5 (Cloudflare Staging & Deployment)**: **In progress**
 

@@ -1,39 +1,47 @@
 # Design System Specification — SoSparkDesigns (2026–2027)
 
 ## 1. Visual Philosophy & Identity Principles
-- **Core Aesthetic**: Editorial precision, clean architectural typography, purposeful whitespace, and restrained royal blue accents.
-- **Brand Blue**: Royal Electric Blue (`#2563EB`) is the sole primary accent.
-- **Strict Brand Rule**: **Never introduce green or neon lime.** All previous neon-lime artifacts from third-party templates are purged.
+- **Core Aesthetic**: Luminous SoSpark — Bright, airy, editorial precision, clean architectural typography, generous whitespace, and official electric blue accents.
+- **Official Brand Blue**: Sampled directly from the official logo: **`#0069EA`** (RGB: 0, 105, 234).
+- **Absolute Rule — LIGHT THEME ONLY**:
+  - **No dark mode.**
+  - **No theme switcher.**
+  - **No dark-background hero.**
+  - **No black-background footer.**
+  - **No dark full-screen sections.**
+  - Primarily pure white (`#FFFFFF`) and very light surfaces (`#F8FAFC`, `#EFF6FF`).
+  - High-contrast black typography (`#000000`, `#09090B`) with brand-blue emphasis.
+- **Strict Brand Rule**: **Never introduce green, neon lime, or purple.** All prior foreign template tokens are completely superseded.
 - **Antislop Design Guardrails**:
-  - Max 2–3 core colors plus 1 primary accent.
+  - Max 2–3 core colors plus 1 primary accent (`#0069EA`).
   - No continuous blue-purple gradient washes.
-  - No gratuitous glassmorphism on every container; reserve subtle backdrops exclusively for floating overlays (e.g. navbar).
   - Consistent border radii (`8px` small, `12px` default, `16px` large, `999px` pills).
-  - High-contrast readability meeting WCAG 2.1 AA standards.
+  - High-contrast readability meeting WCAG 2.1 AA and AAA standards.
 
 ---
 
 ## 2. Color Palette & Semantic Tokens
 
-### Brand Blue Hierarchy
+### Core Luminous Palette
 | Token | Hex | Role | Contrast vs White |
 |---|---|---|---|
-| `brand-600` (Primary) | `#2563eb` | Primary buttons, active tabs, key highlights | 4.6:1 (AA Compliant) |
-| `brand-700` (Deep Blue) | `#1d4ed8` | Button hover, active link state | 6.8:1 (AAA Compliant) |
-| `brand-800` (Navy) | `#1e40af` | Dark container accents, deep gradients | 9.4:1 |
-| `brand-50` (Subtle Tint) | `#eff6ff` | Badge backgrounds, highlighted surface fills | — |
-| `brand-100` (Light Border) | `#dbeafe` | Highlighted borders and selected card outlines | — |
+| `brand-blue` (Primary) | `#0069ea` | Official logo blue: primary buttons, keyword pills, focus accents | 4.6:1 (AA Compliant) |
+| `brand-dark` (Deep Blue) | `#0052c2` | Button hover, active link state | 6.2:1 (AAA Compliant) |
+| `brand-navy` | `#003885` | Deep text accents, high-contrast borders | 9.8:1 |
+| `brand-50` (Subtle Tint) | `#eff6ff` | Badge backgrounds, highlighted surface fills, row hover wash | — |
+| `brand-100` (Light Border) | `#dbeafe` | Highlighted borders, divider lines, and card outlines | — |
 
-### Neutral & Obsidian Canvas
+### High-Contrast Neutral & Canvas System (Light Theme Only)
 | Token | Hex | Role |
 |---|---|---|
-| `obsidian-black` | `#09090b` | High-impact headings, dark card fills |
-| `slate-900` | `#0f172a` | Primary body headings, dark backgrounds |
-| `slate-700` | `#334155` | Secondary text, subheadings |
-| `slate-500` | `#64748b` | Muted labels, metadata, captions |
+| `black` | `#000000` | High-impact headlines, authoritative text |
+| `obsidian` | `#09090b` | Standard headings, card titles |
+| `slate-800` | `#1e293b` | Primary body text |
+| `slate-600` | `#475569` | Secondary descriptive text, subtitles |
+| `slate-400` | `#94a3b8` | Muted labels, metadata, captions |
 | `slate-200` | `#e2e8f0` | Standard hairline dividers, card borders |
-| `slate-50` | `#f8fafc` | Subtle section backgrounds, alternate rows |
-| `white` | `#ffffff` | Primary canvas, card surfaces |
+| `slate-50` | `#f8fafc` | Subtle alternating row fills, pill backgrounds |
+| `white` | `#ffffff` | Primary canvas, card surfaces, navigation background |
 
 ---
 

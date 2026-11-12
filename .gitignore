@@ -17,6 +17,7 @@
 .DS_Store
 *.pem
 *.zip
+references/
 
 # Debug
 npm-debug.log*

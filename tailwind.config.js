@@ -13,13 +13,13 @@ module.exports = {
           100: '#dbeafe',
           200: '#bfdbfe',
           300: '#93c5fd',
-          400: '#60a5fa',
-          500: '#3b82f6',
-          600: '#2563eb', // Primary brand blue
-          700: '#1d4ed8',
-          800: '#1e40af',
-          900: '#1e3a8a',
-          950: '#172554',
+          400: '#3b8bf7',
+          500: '#1a7af8',
+          600: '#0069ea', // Official SoSparkDesigns Brand Blue (sampled from logo)
+          700: '#0052c2',
+          800: '#003d99',
+          900: '#002970',
+          950: '#00194d',
         },
         obsidian: {
           DEFAULT: '#09090b',

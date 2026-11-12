@@ -2,6 +2,8 @@ import React from 'react';
 import Link from 'next/link';
 import { ArrowUpRight, ArrowRight, Sparkles, CheckCircle2 } from 'lucide-react';
 import HeroSystemVisual from '@/components/HeroSystemVisual';
+import KineticHeadlineTicker from '@/components/KineticHeadlineTicker';
+import SpatialFannedDeck from '@/components/SpatialFannedDeck';
 import AgencyEditorialIntro from '@/components/AgencyEditorialIntro';
 import ServicesSection from '@/components/ServicesSection';
 import AuthenticWorkShowcase from '@/components/AuthenticWorkShowcase';
@@ -46,13 +48,13 @@ export default function HomePage() {
             </Badge>
           </div>
 
-          {/* Main Headline (Phase 3 Core Message) */}
+          {/* Main Headline (Phase 3 Core Message with Kinetic Keyword Ticker) */}
           <h1
             id="hero-headline"
             className="text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold text-slate-900 tracking-tight leading-[1.15] max-w-4xl mx-auto"
           >
-            We design what&apos;s next. <br />
-            <span className="text-blue-600">We build what matters.</span>
+            We imagine. We design. <br className="hidden sm:inline" />
+            <span className="text-slate-900">We build</span> <KineticHeadlineTicker />
           </h1>
 
           {/* Value Proposition Description */}
@@ -70,7 +72,7 @@ export default function HomePage() {
                 size="lg"
                 variant="primary"
                 rightIcon={<ArrowUpRight className="w-4 h-4" />}
-                className="shadow-md shadow-blue-600/20"
+                className="shadow-md shadow-blue-600/25"
               >
                 Start a Project
               </Button>
@@ -82,8 +84,8 @@ export default function HomePage() {
             </a>
           </div>
 
-          {/* Modular Architecture & Capability Terminal Visual */}
-          <HeroSystemVisual />
+          {/* Centerpiece Artwork: Spatial Fanned Deck (Pallet Ross Reference B) */}
+          <SpatialFannedDeck />
         </div>
       </section>
 
@@ -108,6 +110,21 @@ export default function HomePage() {
 
       {/* ── Section C: Agency Introduction (Editorial Layout) ── */}
       <AgencyEditorialIntro />
+
+      {/* Interactive System Capability Terminal */}
+      <section className="py-16 md:py-20 bg-slate-50/50 border-b border-slate-200/80">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center max-w-2xl mx-auto mb-10">
+            <span className="text-xs font-mono font-semibold text-blue-600 uppercase tracking-widest block mb-2">
+              Architecture Matrix
+            </span>
+            <h2 className="text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+              Interactive System Telemetry
+            </h2>
+          </div>
+          <HeroSystemVisual />
+        </div>
+      </section>
 
       {/* ── Section D: Services (The 6 Core Disciplines) ── */}
       <ServicesSection />
