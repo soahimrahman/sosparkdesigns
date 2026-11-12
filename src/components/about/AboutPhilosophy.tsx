@@ -28,7 +28,7 @@ export function AboutPhilosophy() {
       number: '04',
       title: 'Build for Real-World Use',
       icon: <Zap className="w-5 h-5 text-blue-600" />,
-      desc: 'True digital quality is measured under real production conditions. We build software that performs under high throughput, passes rigorous RFC standards, and guarantees fast load times.',
+      desc: 'True digital quality is measured under real production conditions. We build software that performs under high throughput, passes rigorous RFC standards, and prioritizes fast load times.',
     },
     {
       number: '05',

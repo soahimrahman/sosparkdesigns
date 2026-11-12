@@ -46,6 +46,24 @@ export async function POST(req: NextRequest) {
       );
     }
 
+    // Staging isolation guard: if running in staging mode or STAGING_ISOLATION is active without a dedicated staging db,
+    // safely mock persistence to prevent polluting production customer records
+    const isStagingIsolated =
+      process.env.STAGING_ISOLATION === 'true' ||
+      (process.env.NEXT_PUBLIC_APP_ENV === 'staging' && !process.env.MONGODB_URI?.includes('staging'));
+
+    if (isStagingIsolated) {
+      console.log('Staging isolated submission received (dry-run mode)');
+      return NextResponse.json(
+        {
+          success: true,
+          message: 'Thank you! Your project inquiry has been received (Staging Environment).',
+          id: `staging_${Date.now().toString(36)}`,
+        },
+        { status: 201 }
+      );
+    }
+
     try {
       await connectMongo();
       const contact = await Contact.create({

@@ -17,6 +17,7 @@ describe('Service Query Parameter Resolution', () => {
     expect(resolveServiceFromQuery('web-design')).toBe('UI/UX & Web Design');
     expect(resolveServiceFromQuery('web-dev')).toBe('Full-Stack Web Development');
     expect(resolveServiceFromQuery('web-development')).toBe('Full-Stack Web Development');
+    expect(resolveServiceFromQuery('graphics')).toBe('Graphic & Marketing Collateral');
     expect(resolveServiceFromQuery('graphic-design')).toBe('Graphic & Marketing Collateral');
     expect(resolveServiceFromQuery('video-editing')).toBe('Video & Motion Graphics');
     expect(resolveServiceFromQuery('video-motion')).toBe('Video & Motion Graphics');
@@ -30,9 +31,16 @@ describe('Service Query Parameter Resolution', () => {
     expect(resolveServiceFromQuery('ui-ux')).toBe('UI/UX & Web Design');
   });
 
-  it('falls back safely to default service on empty, null, or unrecognized queries', () => {
-    expect(resolveServiceFromQuery(null)).toBe('Brand Identity & Systems');
-    expect(resolveServiceFromQuery('')).toBe('Brand Identity & Systems');
-    expect(resolveServiceFromQuery('unrecognized-random-slug-xyz')).toBe('Brand Identity & Systems');
+  it('safely handles URL-encoded strings', () => {
+    expect(resolveServiceFromQuery('web%2Ddevelopment')).toBe('Full-Stack Web Development');
+    expect(resolveServiceFromQuery('Brand%20Identity%20%26%20Systems')).toBe('Brand Identity & Systems');
+  });
+
+  it('falls back safely to Other / Custom Partnership on empty, null, or unrecognized queries to protect client intent', () => {
+    expect(resolveServiceFromQuery(null)).toBe('Other / Custom Partnership');
+    expect(resolveServiceFromQuery('')).toBe('Other / Custom Partnership');
+    expect(resolveServiceFromQuery('   ')).toBe('Other / Custom Partnership');
+    expect(resolveServiceFromQuery('unrecognized-random-slug-xyz')).toBe('Other / Custom Partnership');
+    expect(resolveServiceFromQuery('unknown-service-type')).toBe('Other / Custom Partnership');
   });
 });

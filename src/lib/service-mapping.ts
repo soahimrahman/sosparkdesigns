@@ -50,20 +50,29 @@ export const CANONICAL_SERVICE_SLUG_MAP: Record<string, OfficialService> = {
 
 /**
  * Resolves a URL parameter (slug or title) to the canonical official service dropdown value.
- * Falls back safely to 'Brand Identity & Systems' if missing or unrecognized.
+ * Falls back safely to 'Other / Custom Partnership' if missing, empty, or unrecognized,
+ * preventing accidental misattribution of user inquiry intent.
  */
 export function resolveServiceFromQuery(rawService: string | null | undefined): string {
-  if (!rawService) return OFFICIAL_SERVICES[0];
+  if (!rawService || !rawService.trim()) {
+    return 'Other / Custom Partnership';
+  }
 
-  const trimmed = rawService.trim();
+  // Handle URL decoding safely
+  let decoded = rawService.trim();
+  try {
+    decoded = decodeURIComponent(decoded);
+  } catch {
+    // Keep trimmed if decoding fails
+  }
 
   // 1. Exact match with official title
-  if (OFFICIAL_SERVICES.includes(trimmed as OfficialService)) {
-    return trimmed;
+  if (OFFICIAL_SERVICES.includes(decoded as OfficialService)) {
+    return decoded;
   }
 
   // 2. Normalized slug match
-  const normalized = trimmed
+  const normalized = decoded
     .toLowerCase()
     .replace(/[^a-z0-9]+/g, '-')
     .replace(/^-|-$/g, '');
@@ -79,6 +88,6 @@ export function resolveServiceFromQuery(rawService: string | null | undefined): 
     }
   }
 
-  // 4. Safe fallback to default first service
-  return OFFICIAL_SERVICES[0];
+  // 4. Safe fallback for unknown values to avoid misrepresenting client intent
+  return 'Other / Custom Partnership';
 }

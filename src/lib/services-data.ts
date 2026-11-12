@@ -95,7 +95,7 @@ export const SERVICES_DISCIPLINES: ServiceDiscipline[] = [
     shortDesc:
       'Clean, fast, accessible code. We turn great designs into high-performance production Next.js web applications.',
     longDesc:
-      'We build exclusively with modern frameworks: Next.js 14 App Router, strict TypeScript, and edge-ready serverless architecture. We write resilient server actions, type-safe API handlers with Zod validation, and optimize assets to guarantee sub-second First Contentful Paint and 95+ Lighthouse performance scores.',
+      'We build exclusively with modern frameworks: Next.js 14 App Router, strict TypeScript, and edge-ready serverless architecture. We write resilient server actions, type-safe API handlers with Zod validation, and optimize assets for fast First Contentful Paint and high performance scores.',
     businessProblems: [
       'Bloated WordPress/template sites with slow load times and vulnerable plugins',
       'Fragile codebases causing regression whenever new features are added',
@@ -329,10 +329,10 @@ export const ENGAGEMENT_MODELS: EngagementTier[] = [
     name: 'Fixed-Scope Sprint',
     badge: 'Defined Outcome',
     description:
-      'Structured milestone delivery with clear scope boundaries, guaranteed timeline, and fixed transparent quotation.',
+      'Structured milestone delivery with clear scope boundaries, defined milestone timeline, and transparent project quotation.',
     idealFor: 'Brand identity systems, new company website rebuilds, or single-feature web applications.',
     pricingModel: 'Fixed Project Quotation',
-    terms: '50% deposit / 50% upon verified production handover',
+    terms: 'Milestone invoicing agreed in proposal',
     deliverablesSummary: [
       'Fixed deliverables with zero surprise invoice additions',
       'Dedicated 2–4 week turnaround with structured checkpoints',
@@ -398,7 +398,7 @@ export const SERVICES_FAQS: ServiceFaqItem[] = [
     category: 'Technical',
     question: 'What technologies do you use for web development?',
     answer:
-      'We specialize in modern, high-performance architecture: Next.js 14 App Router, TypeScript, React 18, and Tailwind CSS. For backend logic, we build type-safe serverless APIs with Zod validation, and integrate with MongoDB, PostgreSQL, or edge key-value stores. This guarantees sub-second load times, excellent SEO, and rock-solid maintainability.',
+      'We specialize in modern, high-performance architecture: Next.js 14 App Router, TypeScript, React 18, and Tailwind CSS. For backend logic, we build type-safe serverless APIs with Zod validation, and integrate with MongoDB, PostgreSQL, or edge key-value stores. This provides fast load times, search-friendly semantic structure, and maintainable code.',
   },
   {
     category: 'Engagement',

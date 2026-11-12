@@ -7,14 +7,23 @@ import InteractiveEffects from '@/components/InteractiveEffects';
 import SectionRail from '@/components/SectionRail';
 import AiChatWidget from '@/components/AiChatWidget';
 
+const siteUrl = (process.env.NEXT_PUBLIC_SITE_URL || 'https://sosparkdesign.com').replace(/\/+$/, '');
+const isStaging =
+  process.env.NEXT_PUBLIC_APP_ENV === 'staging' || process.env.VERCEL_ENV === 'preview';
+
 export const metadata: Metadata = {
-  title: 'SoSpark Design — Creative Agency & Digital Lab',
+  metadataBase: new URL(siteUrl),
+  title: {
+    default: 'SoSpark Design — Creative Agency & Digital Lab',
+    template: '%s | SoSpark Design',
+  },
   description:
-    'SoSpark Design is a full-service creative agency delivering graphic design, branding, web design, web development, video editing, and page management.',
+    'SoSpark Design is an independent creative technology studio and digital venture lab delivering brand architecture, UI/UX systems, and production Next.js engineering.',
   openGraph: {
-    title: 'SoSpark Design — Creative Agency',
-    description: 'We build brands that refuse to fade. Graphic design, branding, web, video — all under one roof.',
-    url: 'https://sosparkdesign.com',
+    title: 'SoSpark Design — Creative Agency & Digital Lab',
+    description:
+      'We build what we believe should exist. Brand architecture, Next.js engineering, and digital venture platforms.',
+    url: siteUrl,
     siteName: 'SoSpark Design',
     locale: 'en_US',
     type: 'website',
@@ -22,6 +31,26 @@ export const metadata: Metadata = {
   icons: {
     icon: '/assets/logo-dark.svg',
   },
+  robots: isStaging
+    ? {
+        index: false,
+        follow: false,
+        googleBot: {
+          index: false,
+          follow: false,
+        },
+      }
+    : {
+        index: true,
+        follow: true,
+        googleBot: {
+          index: true,
+          follow: true,
+          'max-video-preview': -1,
+          'max-image-preview': 'large',
+          'max-snippet': -1,
+        },
+      },
 };
 
 export default function RootLayout({

@@ -42,7 +42,10 @@
 - [x] Rebuild `/about` with editorial studio chronicle (2021–Present), founder leadership monograph for Soahim Rahman Tasin, operating philosophy, and venture ecosystem; purged fictional employee profiles (Milestone 4.4).
 - [x] Refine `/faq` and `/contact` with categorized 18-question knowledge base, live search, Schema.org FAQPage JSON-LD, authoritative service dropdown synchronization, and URL parameter preselection (Milestone 4.5).
 
-## Milestone 5: Performance, SEO & Cloudflare Staging
-- [ ] Run cross-browser and mobile responsive audits (320px, 768px, 1024px, 1440px).
-- [ ] Verify Lighthouse performance (LCP < 1.8s, CLS < 0.05, FID/INP good).
-- [ ] Generate production build and verify Cloudflare Pages deployment readiness.
+## Milestone 5: Cloudflare Staging, SEO Finalization & Release Readiness
+- [x] Audit all public marketing, FAQ, and service claims against verifiable evidence; replace ungrounded commercial guarantees with conservative terms.
+- [x] Configure canonical metadata, `metadataBase`, dynamic `src/app/sitemap.ts`, environment-aware `src/app/robots.ts`, and dynamic 1200x630 `src/app/opengraph-image.tsx`.
+- [x] Implement HTTP security headers and API no-store cache rules in `next.config.mjs`.
+- [x] Implement contact API staging isolation guard and document `.env.example` to prevent staging inquiries from writing to production databases.
+- [x] Verify multi-viewport responsive layout (1440px, 1280px, 768px, 375px) across all 8 canonical routes with zero overflow.
+- [x] Author comprehensive release runbook and rollback plan (`docs/MILESTONE_5_STAGING_SEO_RELEASE_READINESS.md`).

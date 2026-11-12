@@ -49,7 +49,7 @@ export const VENTURES: VentureItem[] = [
       'Instant digital license delivery',
       'Verified software subscriptions',
       'Multi-currency checkout support',
-      '24/7 client satisfaction guarantee',
+      'Dedicated direct support channels',
     ],
   },
 ];

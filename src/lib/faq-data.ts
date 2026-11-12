@@ -87,7 +87,7 @@ export const FAQ_ITEMS: FaqItem[] = [
     category: 'Services & Scope',
     question: 'What is included in a Brand Identity & Systems deliverable?',
     answer:
-      'Our brand systems include mathematical vector logo suites (SVG, EPS, PDF), complete brand guideline manuals, modular typographic scales, color contrast matrices tested against WCAG 2.1 AA/AAA standards, business stationery, and social launch collateral.',
+      'Our brand systems include mathematical vector logo suites (SVG, EPS, PDF), complete brand guideline manuals, modular typographic scales, high-contrast color matrices optimized for digital legibility, business stationery, and social launch collateral.',
     keywords: ['logo', 'brand identity', 'guidelines', 'typography', 'vector', 'svg'],
     referenceLink: {
       label: 'Brand Identity Scope Specs',
@@ -113,7 +113,7 @@ export const FAQ_ITEMS: FaqItem[] = [
     category: 'Process & Workflow',
     question: 'How do client feedback and revision cycles work during a project?',
     answer:
-      'Every milestone includes two dedicated rounds of detailed revisions. Feedback is gathered visually through interactive Figma comments and live staging links to ensure feedback is precise, unambiguous, and rapidly addressable before code freeze.',
+      'Revision rounds, feedback milestones, and review checkpoints are agreed directly in each project proposal. Feedback is gathered visually through interactive Figma prototypes and staging links to ensure revisions are actionable and resolved before production code freeze.',
     keywords: ['revisions', 'feedback', 'milestone', 'figma', 'rounds'],
   },
   {
@@ -121,7 +121,7 @@ export const FAQ_ITEMS: FaqItem[] = [
     category: 'Process & Workflow',
     question: 'How quickly can we initiate a new project engagement?',
     answer:
-      'After you submit your inquiry through our contact form, we evaluate requirements and respond within 24–48 business hours with an initial scope assessment. Once the scope contract is approved and the kickoff deposit is processed, production sprints typically begin within 3 to 5 business days.',
+      'Following your project inquiry, we review requirements and provide an initial scope assessment. Once the proposal and deliverables are agreed upon, project kickoff and sprint dates are scheduled based on studio capacity and mutual agreement.',
     keywords: ['kickoff', 'start', 'onboarding', 'how soon', 'timeline'],
     referenceLink: {
       label: 'Start a Project Inquiry',
@@ -147,7 +147,7 @@ export const FAQ_ITEMS: FaqItem[] = [
     category: 'Design & Engineering',
     question: 'How do you guarantee web performance and accessibility?',
     answer:
-      'We engineer Server Components with zero unnecessary client hydration to maintain sub-second First Contentful Paint and 95+ Lighthouse scores. Accessibility is designed in from day one with WCAG 2.1 AA/AAA contrast ratios, keyboard-reachable controls, visible focus indicators, and full prefers-reduced-motion support.',
+      'We engineer Next.js Server Components with minimal client-side JavaScript to prioritize fast loading speeds and prevent layout shifts. Accessibility is integrated from the start with high contrast, semantic HTML landmarks, keyboard navigation, visible focus indicators, and full support for reduced-motion preferences.',
     keywords: ['performance', 'lighthouse', 'speed', 'accessibility', 'wcag', 'seo', 'reduced motion'],
   },
   {
@@ -177,7 +177,7 @@ export const FAQ_ITEMS: FaqItem[] = [
     category: 'Pricing & Terms',
     question: 'How are project payments structured?',
     answer:
-      'For Fixed-Scope Sprints, engagements follow a transparent 50/50 milestone schedule: a 50% deposit upon contract agreement to reserve studio capacity, and 50% upon verified staging sign-off prior to production deployment. Monthly Retainers are billed at the beginning of each 30-day billing cycle.',
+      'Commercial terms, invoicing schedules, and milestone allocations are defined directly in the project agreement based on scope and engagement model. Fixed-scope projects typically utilize structured milestone invoicing tied to verifiable deliverables, while dedicated retainers are billed on agreed monthly cycles.',
     keywords: ['payment', 'deposit', 'terms', 'invoice', 'milestones', '50/50'],
   },
   {
@@ -185,7 +185,7 @@ export const FAQ_ITEMS: FaqItem[] = [
     category: 'Pricing & Terms',
     question: 'Do we own 100% of the intellectual property and source code?',
     answer:
-      'Yes, absolutely. Upon final invoice settlement, full intellectual property rights, vector design assets (Figma, Illustrator), and the production code repository are transferred directly to you. We do not charge ongoing proprietary licensing fees or lock clients into closed systems.',
+      'Yes. Upon final invoice settlement, full intellectual property rights, vector design source files (Figma, Illustrator), and the production code repository are transferred directly to you as specified in the project agreement. We do not lock clients into proprietary platforms.',
     keywords: ['ip', 'ownership', 'copyright', 'code', 'repository', 'rights'],
   },
 

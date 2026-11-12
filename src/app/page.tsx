@@ -18,6 +18,18 @@ export const metadata = {
   title: 'SoSpark Design — Creative Agency & Digital Lab',
   description:
     'Multidisciplinary creative agency and venture lab. Brand identity, UI/UX systems, production Next.js development, and proprietary digital platforms. Led by Soahim Rahman Tasin.',
+  alternates: {
+    canonical: 'https://sosparkdesigns.com',
+  },
+  openGraph: {
+    title: 'SoSpark Design — Creative Agency & Digital Lab',
+    description:
+      'We imagine. We design. We build. Multidisciplinary creative agency and venture lab led by Soahim Rahman Tasin.',
+    url: 'https://sosparkdesigns.com',
+    siteName: 'SoSpark Design',
+    locale: 'en_US',
+    type: 'website',
+  },
 };
 
 export default function HomePage() {
