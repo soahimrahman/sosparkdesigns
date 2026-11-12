@@ -212,7 +212,7 @@ export function ServiceDetailSection() {
                   {/* Direct Inquiry Action CTA */}
                   <div className="pt-6 border-t border-slate-200/80">
                     <Link
-                      href={`/contact?service=${encodeURIComponent(s.title)}`}
+                      href={`/contact?service=${encodeURIComponent(s.id)}`}
                       className="w-full block"
                     >
                       <Button

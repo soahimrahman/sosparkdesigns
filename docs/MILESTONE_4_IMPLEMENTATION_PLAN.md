@@ -76,7 +76,8 @@ Every step of Milestone 4 must satisfy the following criteria:
 ## 4. Execution Schedule
 
 - **Step 1 (Milestone 4.1)**: Audit, baseline reproduction, content inventory, and plan formulation [COMPLETE].
-- **Step 2 (Milestone 4.2)**: Services Page Re-architecture.
-- **Step 3 (Milestone 4.3)**: Portfolio & Case Studies Rebuild.
-- **Step 4 (Milestone 4.4 & 4.5)**: About & FAQ Pages Rebuild.
-- **Step 5 (Milestone 4.6 & 4.7)**: Contact Polish, Cross-device QA, and Cloudflare Staging.
+- **Step 2 (Milestone 4.2)**: Services Page Re-architecture [COMPLETE].
+- **Step 3 (Milestone 4.3)**: Portfolio & Case Studies Rebuild [COMPLETE].
+- **Step 4 (Milestone 4.4)**: About & Leadership Monograph Rebuild [COMPLETE].
+- **Step 5 (Milestone 4.5)**: FAQ Knowledge Base & Contact Funnel Synchronization [COMPLETE].
+- **Step 6 (Milestone 5)**: Performance Audits, SEO Finalization, and Cloudflare Staging.

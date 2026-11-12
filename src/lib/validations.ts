@@ -1,11 +1,17 @@
 import { z } from 'zod';
 
 export const serviceDisciplines = [
-  'Brand Identity',
+  'Brand Identity & Systems',
   'UI/UX & Web Design',
+  'Full-Stack Web Development',
+  'Graphic & Marketing Collateral',
+  'Video & Motion Graphics',
+  'Page & Growth Management',
+  'Other / Custom Partnership',
+  // Backwards compatibility entries
+  'Brand Identity',
   'Web Development (Next.js)',
   'Graphic Design',
-  'Video & Motion',
   'Page Management',
   'Other / Custom Inquiry',
 ] as const;
