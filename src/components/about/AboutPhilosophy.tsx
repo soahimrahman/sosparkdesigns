@@ -1,34 +1,40 @@
 'use client';
 
 import React from 'react';
-import { Compass, Code2, ShieldCheck, Zap } from 'lucide-react';
+import { Compass, Code2, ShieldCheck, Zap, Layers, Sparkles } from 'lucide-react';
 import SectionHeader from '@/components/ui/SectionHeader';
 
 export function AboutPhilosophy() {
   const pillars = [
     {
       number: '01',
-      title: 'Design with Purpose',
+      title: 'Clarity Before Complexity',
       icon: <Compass className="w-5 h-5 text-blue-600" />,
-      desc: 'We reject template trends and cosmetic decoration. Every typography pairing, spacing token, and micro-interaction exists to serve hierarchy, human ergonomics, and conversion clarity.',
+      desc: 'We solve underlying commercial and technical problems before adding visual or architectural layers. Simple, readable systems outperform bloated solutions every time.',
     },
     {
       number: '02',
-      title: 'Engineering with Intention',
+      title: 'Design with Purpose',
+      icon: <Sparkles className="w-5 h-5 text-blue-600" />,
+      desc: 'We reject template trends and ornamental filler. Every typography choice, spacing unit, and interaction exists to serve visual hierarchy, ergonomics, and conversion.',
+    },
+    {
+      number: '03',
+      title: 'Engineering with Discipline',
       icon: <Code2 className="w-5 h-5 text-blue-600" />,
       desc: 'Design and code are one continuous discipline. We write clean, accessible, type-safe Next.js App Router code with strict Zod runtime verification and zero unhandled errors.',
     },
     {
-      number: '03',
+      number: '04',
       title: 'Build for Real-World Use',
       icon: <Zap className="w-5 h-5 text-blue-600" />,
-      desc: 'True digital quality is measured under real production traffic. We build software that performs under high throughput, passes rigorous RFC standards, and guarantees sub-second page loads.',
+      desc: 'True digital quality is measured under real production conditions. We build software that performs under high throughput, passes rigorous RFC standards, and guarantees fast load times.',
     },
     {
-      number: '04',
-      title: 'Ownership & Accountability',
-      icon: <ShieldCheck className="w-5 h-5 text-blue-600" />,
-      desc: 'We operate with total transparency. Clients receive 100% intellectual property ownership, complete Figma and Git repository access, and direct collaboration with studio leadership.',
+      number: '05',
+      title: 'Treat Details as Part of the Product',
+      icon: <Layers className="w-5 h-5 text-blue-600" />,
+      desc: 'Micro-animations, keyboard accessibility, active states, and field-level validation errors are not optional polish—they define the actual caliber of the user experience.',
     },
   ];
 
@@ -41,18 +47,18 @@ export function AboutPhilosophy() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <SectionHeader
           id="philosophy-heading"
-          eyebrow="Foundational Values"
+          eyebrow="Foundational Philosophy"
           title={
             <>
-              Operating principles that <br className="hidden sm:inline" />
-              <span className="text-blue-600">guide every decision.</span>
+              Working principles that <br className="hidden sm:inline" />
+              <span className="text-blue-600">guide our studio practice.</span>
             </>
           }
           description="We hold ourselves to a strict standard of aesthetic restraint, architectural rigor, and commercial honesty."
           align="center"
         />
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
           {pillars.map((pillar) => (
             <div
               key={pillar.number}

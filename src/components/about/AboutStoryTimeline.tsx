@@ -1,76 +1,52 @@
 'use client';
 
 import React from 'react';
-import { Calendar, CheckCircle2, ArrowRight } from 'lucide-react';
+import { CheckCircle2 } from 'lucide-react';
 import SectionHeader from '@/components/ui/SectionHeader';
 
-export interface MilestoneItem {
-  year: string;
+export interface StoryChapter {
+  period: string;
   badge: string;
   title: string;
-  description: string;
-  highlights: string[];
+  narrative: string;
+  focusPoints: string[];
 }
 
-export const MILESTONES: MilestoneItem[] = [
+export const STORY_CHAPTERS: StoryChapter[] = [
   {
-    year: '2021',
-    badge: 'Inception',
-    title: 'The Studio Thesis',
-    description:
-      'Founded by Soahim Rahman Tasin with a clear thesis: design and engineering should not exist in separate silos. High-end visual craft and modern full-stack code should live seamlessly under one roof.',
-    highlights: [
-      'Establishment of SoSpark design studio',
-      'Initial brand identity and vector typography commissions',
-      'Integration of modern responsive frontend principles',
+    period: '2021',
+    badge: 'Founding',
+    title: 'The Studio Inception',
+    narrative:
+      'SoSparkDesigns was founded in 2021 by Soahim Rahman Tasin with a clear thesis: design and software engineering should not be disconnected silos. The studio was established to unite high-end visual brand craft and modern code under a single disciplined practice.',
+    focusPoints: [
+      'Establishment of the independent studio practice',
+      'Unified brand architecture and frontend engineering',
+      'Direct collaboration between founder and clients',
     ],
   },
   {
-    year: '2023',
-    badge: 'Expansion',
-    title: 'Systems & International Engagements',
-    description:
-      'Expanded client engagements across North America, Europe, the Middle East, and Asia. Focused on comprehensive brand architecture, typographic design systems, and conversion-focused web specifications.',
-    highlights: [
-      'International async collaboration frameworks established',
-      'Modular Figma design system workflows',
-      'Multi-device responsive design standards',
+    period: 'Evolution',
+    badge: 'Craft & Systems',
+    title: 'The Systems Evolution',
+    narrative:
+      'As digital expectations matured, the studio moved away from template-driven workflows toward custom Next.js App Router architecture and scalable design token systems. Every project began with first-principles Figma design systems translated directly into production TypeScript code.',
+    focusPoints: [
+      'Transition to strict TypeScript and Next.js App Router',
+      'Bespoke design token architectures and WCAG accessibility standards',
+      'Elimination of third-party template bloat across all deliveries',
     ],
   },
   {
-    year: '2024',
-    badge: 'Architecture',
-    title: 'Next.js Engineering & Serverless Focus',
-    description:
-      'Pioneered full-stack Next.js App Router engineering, strict TypeScript pipelines, and serverless edge architectures. Transitioned away from commodity CMS platforms toward custom high-performance web applications.',
-    highlights: [
-      'Next.js 14 App Router adoption across all client builds',
-      'Strict TypeScript and Zod validation integration',
-      'Sub-second First Contentful Paint performance standards',
-    ],
-  },
-  {
-    year: '2025',
+    period: '2025–Present',
     badge: 'Venture Lab',
-    title: 'Proprietary Product Architecture: Subz Empire',
-    description:
-      'Transitioned the studio into a dual agency and venture lab. Conceived, architected, and launched Subz Empire—a digital subscription management and automated creator licensing marketplace.',
-    highlights: [
-      'Launch of Subz Empire (https://subzempire.com)',
-      'Automated webhook-driven digital license fulfillment',
-      'High-conversion 2-step checkout architecture',
-    ],
-  },
-  {
-    year: '2026 (Present)',
-    badge: 'Current Era',
-    title: 'Deliverability Infrastructure: SparkForge & Sovereign Tokens',
-    description:
-      'Engineered and deployed SparkForge—an RFC 5321/5322 compliant email deliverability verification engine. Codified the studio’s official #0069EA design token system and established strict zero-fabrication standards.',
-    highlights: [
-      'Deployment of SparkForge Engine (https://sparkfroge.pro.bd)',
-      'Direct DNS MX socket handshake telemetry',
-      'SoSpark Master Design Token System release',
+    title: 'The Venture Ecosystem',
+    narrative:
+      'Rather than remaining strictly an agency service provider, SoSparkDesigns expanded into an active digital venture lab. The studio began engineering, launching, and operating proprietary platforms—most notably the Subz Empire marketplace and the SparkForge email deliverability engine.',
+    focusPoints: [
+      'Architecture and operation of Subz Empire (https://subzempire.com)',
+      'Engineering and deployment of SparkForge (https://sparkfroge.pro.bd)',
+      'Codification of the studio’s official #0069EA sovereign design tokens',
     ],
   },
 ];
@@ -88,22 +64,22 @@ export function AboutStoryTimeline() {
           eyebrow="Chronicle & Evolution"
           title={
             <>
-              Five years of continuous craft, <br className="hidden sm:inline" />
-              <span className="text-blue-600">from 2021 to the present.</span>
+              An honest account of <br className="hidden sm:inline" />
+              <span className="text-blue-600">how our studio evolved.</span>
             </>
           }
-          description="A documented record of how an independent creative practice evolved into a full-stack digital product studio and venture lab."
+          description="Documented facts from our 2021 founding to our present focus on design systems and proprietary venture software."
           align="center"
         />
 
-        {/* Vertical Connected Editorial Timeline */}
+        {/* 3-Stage Documented Story Pipeline */}
         <div className="relative pl-6 sm:pl-10 border-l-2 border-blue-200 space-y-12 md:space-y-16">
-          {MILESTONES.map((item, idx) => {
-            const isPresent = item.year.includes('Present');
+          {STORY_CHAPTERS.map((chapter) => {
+            const isPresent = chapter.period.includes('Present');
 
             return (
-              <div key={item.year} className="relative group">
-                {/* Timeline Node Marker */}
+              <div key={chapter.period} className="relative group">
+                {/* Node indicator */}
                 <div
                   className={`absolute -left-[31px] sm:-left-[47px] top-1.5 w-6 h-6 rounded-full border-4 border-white flex items-center justify-center transition-transform group-hover:scale-110 shadow-sm ${
                     isPresent ? 'bg-blue-600 ring-4 ring-blue-100' : 'bg-slate-400'
@@ -111,11 +87,10 @@ export function AboutStoryTimeline() {
                   aria-hidden="true"
                 />
 
-                {/* Milestone Content Card */}
                 <div className="bg-white rounded-2xl border border-slate-200/90 p-6 sm:p-8 shadow-sm hover:border-blue-300 transition-colors">
                   <div className="flex flex-wrap items-center justify-between gap-2 mb-3">
                     <span className="text-sm sm:text-base font-mono font-extrabold text-blue-600">
-                      {item.year}
+                      {chapter.period}
                     </span>
                     <span
                       className={`text-[10px] font-mono font-bold uppercase tracking-wider px-2.5 py-0.5 rounded-full ${
@@ -124,28 +99,27 @@ export function AboutStoryTimeline() {
                           : 'bg-slate-100 text-slate-600 border border-slate-200'
                       }`}
                     >
-                      {item.badge}
+                      {chapter.badge}
                     </span>
                   </div>
 
                   <h3 className="text-xl sm:text-2xl font-bold text-slate-900 tracking-tight">
-                    {item.title}
+                    {chapter.title}
                   </h3>
 
                   <p className="mt-3 text-xs sm:text-sm text-slate-600 leading-relaxed font-normal">
-                    {item.description}
+                    {chapter.narrative}
                   </p>
 
-                  {/* Factual Highlights Checklist */}
                   <div className="mt-5 pt-4 border-t border-slate-100 space-y-2">
                     <span className="text-[11px] font-mono font-bold uppercase tracking-wider text-slate-500 block">
-                      Documented Milestones:
+                      Key Highlights:
                     </span>
                     <ul className="grid grid-cols-1 sm:grid-cols-2 gap-2 text-xs text-slate-700">
-                      {item.highlights.map((h, hIdx) => (
-                        <li key={hIdx} className="flex items-center gap-2">
+                      {chapter.focusPoints.map((point, pIdx) => (
+                        <li key={pIdx} className="flex items-center gap-2">
                           <CheckCircle2 className="w-3.5 h-3.5 text-blue-600 shrink-0" />
-                          <span>{h}</span>
+                          <span>{point}</span>
                         </li>
                       ))}
                     </ul>

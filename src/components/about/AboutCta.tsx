@@ -59,6 +59,17 @@ export function AboutCta() {
               Explore Services &amp; Scope
             </Button>
           </Link>
+
+          <Link href="/portfolio">
+            <Button
+              size="lg"
+              variant="outline"
+              rightIcon={<ArrowRight className="w-4 h-4" />}
+              className="bg-white hover:bg-slate-50 text-slate-800 border-slate-300 hover:border-slate-400 font-semibold shadow-sm"
+            >
+              View Portfolio Work
+            </Button>
+          </Link>
         </div>
 
         <div className="mt-14 pt-10 border-t border-slate-200/80 flex flex-wrap items-center justify-center gap-8 text-xs text-slate-600">

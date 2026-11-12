@@ -4,26 +4,31 @@ import React from 'react';
 import SectionHeader from '@/components/ui/SectionHeader';
 
 export function AboutWorkingPrinciples() {
-  const principles = [
+  const approaches = [
     {
       num: '01',
-      title: 'Absolute Commercial Transparency',
-      desc: 'We operate with defined scopes and fixed milestones. No surprise invoices, no hidden licensing retainers, and 100% intellectual property and repository ownership transferred upon completion.',
+      title: 'Discovery & Diagnosis',
+      desc: 'We examine your business model, target audience, and existing codebase before proposing solutions. Understanding the exact operational bottleneck prevents wasteful rewrites and misaligned design.',
     },
     {
       num: '02',
-      title: 'Direct Leadership Collaboration',
-      desc: 'Our clients communicate directly with Founder & Architect Soahim Rahman Tasin. We eliminate account management layers so technical and aesthetic decisions happen without friction or dilution.',
+      title: 'Editorial Design Systems',
+      desc: 'Every brand identity and user interface is authored from first principles in Figma using scalable design tokens, WCAG 2.1 AA accessibility standards, and deliberate typography hierarchies.',
     },
     {
       num: '03',
-      title: 'Zero-Template Standard',
-      desc: 'We refuse generic marketplace themes. Every brand identity, vector suite, and Next.js interface is authored from first principles in Figma and implemented in strict TypeScript to elevate market positioning.',
+      title: 'Disciplined Engineering',
+      desc: 'We build exclusively with modern frameworks: Next.js 14 App Router, strict TypeScript, and serverless APIs. Code is tested with automated suites (Vitest) and verified with zero compiler warnings.',
     },
     {
       num: '04',
-      title: 'Rigorous Quality Gates',
-      desc: 'We do not claim code works merely because it compiles. Every release passes automated unit test suites, ESLint zero-warning checks, and strict WCAG 2.1 AA accessibility audits before deployment.',
+      title: 'Direct Communication',
+      desc: 'Clients communicate directly with Founder & Architect Soahim Rahman Tasin. We eliminate account management layers so technical, aesthetic, and architectural decisions happen without dilution.',
+    },
+    {
+      num: '05',
+      title: 'Production Verification & Delivery',
+      desc: 'We verify our work with empirical multi-device browser testing, cross-browser validation, and lighthouse performance audits. Clients receive 100% intellectual property ownership upon completion.',
     },
   ];
 
@@ -36,24 +41,24 @@ export function AboutWorkingPrinciples() {
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
         <SectionHeader
           id="principles-heading"
-          eyebrow="Working Principles"
+          eyebrow="Studio Execution Approach"
           title={
             <>
-              How we work together: <br className="hidden sm:inline" />
-              <span className="text-blue-600">agile, direct, and accountable.</span>
+              How we approach discovery, <br className="hidden sm:inline" />
+              <span className="text-blue-600">design, engineering, and delivery.</span>
             </>
           }
-          description="Clear expectations and engineering discipline create enduring client partnerships."
+          description="A structured, disciplined methodology built to eliminate ambiguity and deliver production-grade results."
           align="center"
         />
 
         <div className="divide-y divide-slate-200/90 border-y border-slate-200/90 bg-white rounded-2xl overflow-hidden shadow-sm">
-          {principles.map((p) => (
+          {approaches.map((p) => (
             <div
               key={p.num}
               className="p-6 sm:p-8 flex flex-col md:flex-row md:items-start gap-4 md:gap-8 hover:bg-blue-50/30 transition-colors"
             >
-              <div className="flex items-center gap-3 md:w-1/4 shrink-0">
+              <div className="flex items-center gap-3 md:w-1/3 shrink-0">
                 <span className="text-2xl sm:text-3xl font-mono font-extrabold text-blue-600">
                   {p.num}
                 </span>
@@ -62,7 +67,7 @@ export function AboutWorkingPrinciples() {
                 </h3>
               </div>
 
-              <div className="md:w-3/4">
+              <div className="md:w-2/3">
                 <p className="text-xs sm:text-sm text-slate-600 leading-relaxed font-normal">
                   {p.desc}
                 </p>
