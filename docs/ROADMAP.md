@@ -39,7 +39,8 @@
 ## Milestone 4: Secondary Pages & Narrative Expansion
 - [x] Refactor `/services` with premium Luminous light theme, Cydrix-inspired numbered horizontal overview, deep-dive alternating service breakdowns, 5-stage methodology timeline, transparent engagement models, accessible FAQ accordion, and schema markup (Milestone 4.2).
 - [x] Rebuild `/portfolio` with authentic venture showcases (SparkForge, Subz Empire), transparent Studio Concept Study classifications, interactive category filtering, and dedicated case study routes `/portfolio/sparkforge` and `/portfolio/subz-empire` (Milestone 4.3).
-- [ ] Update `/about` and `/faq` with factual company background.
+- [x] Rebuild `/about` with editorial studio chronicle (2021–Present), founder leadership monograph for Soahim Rahman Tasin, operating philosophy, and venture ecosystem; purged fictional employee profiles (Milestone 4.4).
+- [ ] Refine `/faq` and `/contact` with accessible accordion, service dropdown alignment, and schema markup (Milestone 4.5).
 
 ## Milestone 5: Performance, SEO & Cloudflare Staging
 - [ ] Run cross-browser and mobile responsive audits (320px, 768px, 1024px, 1440px).
